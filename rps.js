@@ -1,6 +1,8 @@
 let playerWins = 0;
 let computerWins = 0;
 
+let darkModeCounter = 0;
+
 function computerPlay() {
     let pick = Math.floor(Math.random() * 3) + 1;
     if (pick == 1) return "Rock"
@@ -55,14 +57,28 @@ function resetGame() {
 
 }
 
+function switchToDark (e) {
+    if (darkModeCounter==0){
+    bodyStyle.style.backgroundColor="#444";
+    bodyStyle.style.color="#EEEEEE";
+   darkModeCounter=1;
+    
+    }else {
+    bodyStyle.style.backgroundColor="#EEEEEE";
+    bodyStyle.style.color="#444";
+    darkModeCounter=0;
+    }
+}
 
 const yourScore = document.querySelector("#yourScore");
 const computerScore = document.querySelector("#computerScore");
 const result = document.querySelector(".lastGame");
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".playerChoice");
 const endGame = document.querySelector(".results");
 const rematch = document.createElement("div");
 const rematchButton = document.createElement("button");
+const darkMode = document.querySelector("#darkMode");
+const bodyStyle = document.querySelector("body");
 
 rematchButton.style.height = "30px";
 rematch.style.padding= "10px";
@@ -77,7 +93,7 @@ buttons.forEach(btn => {
 //add reset game after 5 wins
 rematchButton.addEventListener("click", resetGame);
 
-
+darkMode.addEventListener("click", switchToDark);
 
 
 

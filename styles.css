@@ -62,3 +62,7 @@ a {
 .results p {
     margin:5px;
 }
+
+#darkMode {
+    height:30px;
+}
