@@ -35,3 +35,30 @@ a {
     color:#444;
     font-weight: bold;
 }
+
+#rps {
+    border: 2px solid #444 ;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+}
+
+#buttons {
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+#buttons button {
+    flex-grow:1;
+    height:30px;
+}
+
+.results {
+    display:flex;
+    flex-direction: column;
+}
+
+.results p {
+    margin:5px;
+}
