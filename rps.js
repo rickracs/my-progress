@@ -61,6 +61,7 @@ function switchToDark (e) {
     if (darkModeCounter==0){
     bodyStyle.style.backgroundColor="#444";
     bodyStyle.style.color="#EEEEEE";
+    displayStyle.style.backgroundColor="#444";
    darkModeCounter=1;
     
     }else {
@@ -79,6 +80,7 @@ const rematch = document.createElement("div");
 const rematchButton = document.createElement("button");
 const darkMode = document.querySelector("#darkMode");
 const bodyStyle = document.querySelector("body");
+const displayStyle = document.querySelector("#display");
 
 rematchButton.style.height = "30px";
 rematch.style.padding= "10px";

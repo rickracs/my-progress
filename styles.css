@@ -12,7 +12,7 @@ body {
     padding: 0 ;
 }
 div {
-    padding: 0 10px;
+   padding: 0 10px;
 }
 
 h1 {
@@ -66,3 +66,99 @@ a {
 #darkMode {
     height:30px;
 }
+
+/* --------------ETCH-A-SKETCH------------------*/
+
+
+#reset {
+    margin: 30px;
+    padding:20px;
+}
+
+.etchbox {
+    margin:auto;
+    width: 512px;
+    height:512px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border:2px solid black;
+}
+
+.sketch {
+    padding:0;
+}
+
+.colored {
+    padding:0;
+    background-color: black;
+}
+
+/* ---------------CALCULATOR ------------------*/
+
+#calculator {
+    min-width: 400px;
+    max-width: 400px;
+   /* height:600px;*/
+   border: 2px solid black;
+   display:flex;
+   flex-direction: column;
+   font-weight: bold;
+   border-radius: 10px;
+   background-color: #b3b3b3;
+   margin:auto;
+
+}
+
+#display {
+    height:80px;
+    padding:5px;
+    border: 2px solid black;
+    margin:10px;
+    background-color: white;
+}
+
+#first-row {
+    height:35px;
+    font-size: 18px;
+    text-align: right;
+}
+
+#second-row {
+    height:45px;
+    font-size: 30px;
+    text-align: right;
+}
+
+#clear-delete {
+    display:flex;
+    /*justify-content: space-around;*/
+}
+
+#clear-delete button {
+    flex-grow: 1;
+    padding:10px;
+    margin:10px;
+    background-color: rgb(73, 73, 73);
+    color:#EEEEEE;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#small-buttons {
+    display:flex;
+    flex-wrap: wrap;
+   
+}
+
+#small-buttons button {
+    padding:10px;
+    margin:10px;
+    min-width: 75px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
